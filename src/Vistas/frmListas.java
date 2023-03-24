@@ -36,8 +36,8 @@ public class frmListas extends javax.swing.JFrame {
         txtListaMedicoDos = new javax.swing.JTextArea();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        btnAgregarUno = new javax.swing.JButton();
-        btnAgregarDos = new javax.swing.JButton();
+        btnAtenderUno = new javax.swing.JButton();
+        btnAtenderDos = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         txtListaMedicoUno = new javax.swing.JTextArea();
 
@@ -51,14 +51,14 @@ public class frmListas extends javax.swing.JFrame {
 
         jLabel8.setText("Lista para el doctor Eyvi");
 
-        btnAgregarUno.setText("Atender Paciente");
-        btnAgregarUno.addActionListener(new java.awt.event.ActionListener() {
+        btnAtenderUno.setText("Atender Paciente");
+        btnAtenderUno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarUnoActionPerformed(evt);
+                btnAtenderUnoActionPerformed(evt);
             }
         });
 
-        btnAgregarDos.setText("Atender Paciente");
+        btnAtenderDos.setText("Atender Paciente");
 
         txtListaMedicoUno.setColumns(20);
         txtListaMedicoUno.setRows(5);
@@ -70,9 +70,9 @@ public class frmListas extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(btnAgregarUno)
+                .addComponent(btnAtenderUno)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnAgregarDos)
+                .addComponent(btnAtenderDos)
                 .addGap(54, 54, 54))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(32, 32, 32)
@@ -110,17 +110,17 @@ public class frmListas extends javax.swing.JFrame {
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAgregarUno)
-                    .addComponent(btnAgregarDos))
+                    .addComponent(btnAtenderUno)
+                    .addComponent(btnAtenderDos))
                 .addContainerGap(44, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnAgregarUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarUnoActionPerformed
+    private void btnAtenderUnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtenderUnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarUnoActionPerformed
+    }//GEN-LAST:event_btnAtenderUnoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,8 +158,8 @@ public class frmListas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnAgregarDos;
-    public javax.swing.JButton btnAgregarUno;
+    public javax.swing.JButton btnAtenderDos;
+    public javax.swing.JButton btnAtenderUno;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel7;
     public javax.swing.JLabel jLabel8;

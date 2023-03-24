@@ -33,7 +33,7 @@ public class ListaModel {
     }
     
     public void EliminarPaciente() 
-    {
+    {        
         this.ListaPacientes1.poll();
         this.ListaPacientes2.poll();
     }

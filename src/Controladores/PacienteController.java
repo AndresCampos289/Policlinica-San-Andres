@@ -27,11 +27,16 @@ public class PacienteController implements ActionListener{
         this.VistaPrincipal.btnListas.addActionListener(this);
     
         
-        this.VistaListas.btnAgregarUno.addActionListener(this);
-        this.VistaListas.btnAgregarDos.addActionListener(this);
+        this.VistaListas.btnAtenderUno.addActionListener(this);
+        this.VistaListas.btnAtenderDos.addActionListener(this);
+        
+        this.VistaPrincipal.setLocationRelativeTo(null);
+        this.VistaPrincipal.setVisible(true);
         
         this.VistaListas.setLocationRelativeTo(null);
         this.VistaListas.setVisible(true);
+        
+        
         
     }
     
@@ -70,7 +75,25 @@ public class PacienteController implements ActionListener{
                 this.VistaListas.txtListaMedicoDos.setText(Cadena);
             }
             
-        }     
+        }
+        if(e.getSource()==this.VistaPrincipal.btnListas)
+        {
+            this.VistaListas.setVisible(false);
+        }
+        
+        if(e.getSource()==this.VistaListas.btnAtenderUno)
+        {
+            String limpliar = "";
+            this.VistaListas.txtListaMedicoUno.setText(limpliar);  
+
+        }
+        if(e.getSource()==this.VistaListas.btnAtenderDos)
+        {
+            String limpliar = "";
+            this.VistaListas.txtListaMedicoDos.setText(limpliar);  
+        }
+
+        }
+        
     }   
-}
 
